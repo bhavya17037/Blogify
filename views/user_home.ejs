@@ -1,0 +1,21 @@
+<html>
+     <head>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <center><h1>Home</h1></center><br><br>
+        Your current blogs: <br><br>
+        <ol>
+           <% for(var j = 0; j < Titles.length; j++){ %>
+            <li><%- link_to(Titles[j],"/content/:"+Titles[j])%></li>
+            <% } %>
+        </ol>
+        
+        <br><br><br><br>
+        <a href="/addBlog">Make a new Entry</a>
+        
+        
+        
+    </body>
+</html>
